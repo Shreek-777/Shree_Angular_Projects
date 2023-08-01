@@ -1,0 +1,91 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstName": "Shree",
+      "lastName": "Kumbhar",
+      "technology": "SpringBoot",
+      "designation": "Associte Engineer",
+      "skills": "Angular 13",
+      "core": "Angular",
+      "certification": "",
+      "compony": "Collabera",
+      "about": "I Am Fresher ",
+      "id": 2
+    },
+    {
+      "firstName": "Shree",
+      "lastName": "Kumbhar",
+      "technology": "SpringBoot",
+      "designation": "Associte Engineer",
+      "skills": "Angular 13",
+      "core": "Angular",
+      "certification": "",
+      "compony": "Collabera",
+      "about": "I Am Fresher ",
+      "id": 3
+    },
+    {
+      "firstName": "askjbdsh",
+      "lastName": "scjhvshj",
+      "technology": "adougioug",
+      "designation": "doiugidug",
+      "skills": "select",
+      "core": "jgdjfd",
+      "certification": "",
+      "compony": "hf",
+      "about": "jhgt",
+      "id": 4
+    },
+    {
+      "firstName": "askjbdsh",
+      "lastName": "scjhvshj",
+      "technology": "adougioug",
+      "designation": "doiugidug",
+      "skills": "select",
+      "core": "jgdjfd",
+      "certification": "",
+      "compony": "hf",
+      "about": "jhgt",
+      "id": 5
+    },
+    {
+      "firstName": "Suraj",
+      "lastName": "Kumbhar",
+      "technology": "Java",
+      "designation": "Intern",
+      "skills": "Java",
+      "core": "Java",
+      "certification": "",
+      "compony": "Pillai",
+      "about": "Fresher",
+      "id": 6
+    },
+    {
+      "firstName": "Suraj",
+      "lastName": "Kumbhar",
+      "technology": "Java",
+      "designation": "Intern",
+      "skills": "Java",
+      "core": "Java",
+      "certification": "",
+      "compony": "Pillai",
+      "about": "Fresher",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

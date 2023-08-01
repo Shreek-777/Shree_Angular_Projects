@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "firstName": "Shree ",
+      "lastName": "Kumbhar",
+      "technology": "SpringBoot",
+      "designation": "Associate Engineer",
+      "skills": "SpringBoot",
+      "core": "Angular 13",
+      "certification": "",
+      "compony": "Ascendion",
+      "about": "guy",
+      "id": 2
+    },
+    {
+      "firstName": "Suraj",
+      "lastName": "Kumbhar",
+      "technology": "SpringBoot",
+      "designation": "Associate Engineer",
+      "skills": "SpringBoot",
+      "core": "Angular 13",
+      "certification": "",
+      "compony": "Ascendion",
+      "about": "guy",
+      "id": 10
+    },
+    {
+      "firstName": "zhkg shgvcs",
+      "lastName": "oiuhdibud",
+      "technology": "sd9uhei9uhe",
+      "designation": "aiuheiuhbe9iu",
+      "skills": "SpringBoot",
+      "core": null,
+      "certification": null,
+      "compony": "jihuhv",
+      "about": "dibdibd",
+      "id": 11
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,36 @@
+.outerDiv{
+    padding: 15px;
+    border: 1px solid rgb(136, 130, 130);
+  }
+  
+  .form-control{
+      padding: 0.20rem !important;
+      border: 1px solid #3d4042 !important;
+  }
+  
+  .rowBorder{
+      border: 1px solid grey;
+  }
+  
+  .rowBorder Form{
+      padding: 15px;
+  }
+  
+  .row{
+      padding-top: 10px;
+  }
+
+  .card{
+    background-color: #747a7d;
+    color: #dcdfe1;
+    border: 1px solid gray;
+    padding: 0.00rem !important;
+
+  }
+
+  .c{
+    background-color: #747a7d;
+    color: #dcdfe1;
+    border: 1px solid gray;
+    padding: 8px;
+  }

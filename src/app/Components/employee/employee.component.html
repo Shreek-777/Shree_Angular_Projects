@@ -1,0 +1,175 @@
+<div class="row">
+
+    
+      <div class="col-md-4">
+        <form [formGroup]="form" class="form-group"  (ngSubmit)="onSubmit()">
+       <div class="c">
+        <h3 class="text-center card-header mb-1">Employee Details Entry Form</h3>
+       </div>
+        <div class="outerDiv mt-1">
+          <div class="row">
+            <div class="col-md-5">
+              <label>Name :</label>
+            </div>
+            <div class="col-md-3">
+              <input type="text" class="form-control" formControlName="firstName">
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control" formControlName="lastName">
+            </div>
+          </div>
+    
+          <!-- <div class="row">
+            <div class="col-md-5">
+              <label>Technology :</label>
+            </div>
+            <div class="col-md-7">
+              <input type="text" class="form-control" formControlName="technology" >
+            </div>
+          </div> -->
+    
+          <div class="row">
+            <div class="col-md-5">
+              <label>Designation :</label>
+            </div>
+            <div class="col-md-7">
+              <input type="text" class="form-control" formControlName="desination">
+            </div>
+          </div>
+         
+          <div class="row">
+            <div class="col-md-5">
+              <label>Skils :</label>
+            </div>
+            <div class="col-md-4">
+              <select class="form-control" formControlName="skills" id="skills">
+                   <option value="select">Select</option>
+                   <option value="Java">Java</option>
+                   <option value="SpringBoot">SpringBoot</option>
+                   <option value="Angular 13">Angular 13</option>
+              </select>
+            </div>
+          </div>
+           
+          <div class="row">
+            <div class="col-md-5">
+              <label style="font-size: 14px;">Core Expertise In</label>
+            </div>
+            <div class="col-md-7">
+              <input type="text" class="form-control" formControlName="coreExperties">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-md-5">
+              <label>Certification If Any</label>
+            </div>
+            <div class="col-md-7">
+              Yes <input type="radio"/>
+              No <input type="radio"/>
+            </div>
+          </div>
+          
+    
+          <div class="row">
+            <div class="col-md-5">
+              <label></label>
+            </div>
+            <div class="col-md-7">
+              <input type="text" class="form-control" disabled="true">
+            </div>
+          </div>
+           
+          <div class="row">
+            <div class="col-md-5">
+              <label>Compony</label>
+            </div>
+            <div class="col-md-7">
+              <input type="text" class="form-control" formControlName="compony"> 
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-md-12">
+              <label>About Yourself :</label>
+            </div>
+            <div class="col-md-12">
+             <textarea  class="form-control" rows="3" formControlName="aboutYourself"></textarea  >
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="col-md-6">
+            
+            </div>
+            <div class="col-md-6 text-end">
+              <button class="btn btn-secondary btn-sm" (click)="onCancel()" >Cancel</button>
+              <button class="btn btn-secondary btn-sm mx-2" (click)="onSubmit()">{{buttonText}}</button>
+            </div>
+          </div>
+    
+        </div>
+    
+      </form>
+      </div>
+    
+
+    <div class="col-md-8">
+      <div class="c">
+        <h3 class="text-center card-header mb-1">  Employee List </h3>
+      </div>
+        <div class="outerDiv mt-1">
+          
+          <div class="row">
+            <div class="col-md-6">
+    
+            </div>
+            <div class="col-md-3">
+              <select class="form-control">
+                  <option value="">Select</option>
+                  <option value="">Java</option>
+                  <option value="">SpringBoot</option>
+                  <option value="">Angular</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+          <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="row">
+            <div  class="col-md-12">
+              <table class="table table-bordered">
+                <thead>
+                  <tr >
+                    <th>Sr</th>
+                    <th>Name</th>
+                    <th>Technology</th>
+                    <th>Designation</th>
+                    
+                    <th>Core Expertise</th>
+                    <th>Compony</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let emp of employee ; let i=index ">
+                    <td>{{i+1}}</td>
+                    <td>{{emp.firstName}} {{emp.lastName}}</td>
+                    <td>{{emp.skills}}</td>
+                    <td>{{emp.desination}}</td>
+                    <td>{{emp.coreExperties}}</td>
+                    <td>{{emp.compony}}</td>
+                    <td>
+                      <i class="fa fa-edit me-3" (click)="onEdit(emp.id)" ></i>
+                      <i class="fa fa-trash" style="color: red;" (click)="onDelete(emp.id)" ></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> 
+          </div>
+ 
+        </div>
+    </div>
+  </div>
